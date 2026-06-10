@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宸一工作室 | ChenYi Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 扫描线效果 -->
+    <div class="scanlines"></div>
+    
+    <!-- 粒子背景 -->
+    <canvas id="particles"></canvas>
+
+    <!-- 头部 -->
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="img/scene.png" alt="宸一" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="宸一">宸一</h1>
+            </div>
+            <div class="subtitle">
+                <span class="typing">班味缅因猫 · 北漂程序员</span>
+            </div>
+            <div class="slogan">
+                <p class="neon-text">代码改不改世界我不知道，</p>
+                <p class="neon-text">但先让我准时下班。</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>▼</span>
+        </div>
+    </header>
+
+    <!-- 关于宸一 -->
+    <section class="about" id="about">
+        <h2 class="section-title">
+            <span class="bracket">[</span>
+            关于宸一
+            <span class="bracket">]</span>
+        </h2>
+        <div class="about-content">
+            <div class="avatar-container">
+                <div class="avatar-frame">
+                    <img src="img/portrait.png" alt="宸一头像" class="avatar-image">
+                </div>
+                <div class="avatar-glitch"></div>
+            </div>
+            <div class="info-panel">
+                <div class="info-item">
+                    <span class="label">代号</span>
+                    <span class="value">CY-01</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">种族</span>
+                    <span class="value">缅因猫 Maine Coon</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">坐标</span>
+                    <span class="value">北京 · Grid City</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">职业</span>
+                    <span class="value">后端程序员</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">状态</span>
+                    <span class="value status-blink">在线搬砖中...</span>
+                </div>
+                <div class="bio">
+                    <p>河北保定农村出身，寒门求学，无背景、无资源。</p>
+                    <p>从互联网外包底层历练，稳步突围入职北京小型互联网公司。</p>
+                    <p>主动拥抱AI行业趋势，从零自学AI工具与职场工作流。</p>
+                    <p class="highlight">全程真实记录普通打工人在AI浪潮下的迷茫、试错、碰壁、坚持与成长。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 人生主线（简化版，保持神秘） -->
+    <section class="timeline" id="timeline">
+        <h2 class="section-title">
+            <span class="bracket">[</span>
+            人生主线
+            <span class="bracket">]</span>
+        </h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-label">01</span>
+                    <p>寒门出身，依靠求学走出家乡</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-label">02</span>
+                    <p>互联网外包底层历练，积累经验</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-label">03</span>
+                    <p>突围入职北京小厂，稳定发展</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-label">04</span>
+                    <p>主动拥抱AI，从零自学</p>
+                </div>
+            </div>
+            <div class="timeline-item active">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-label">05</span>
+                    <p>打造个人IP，记录成长</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-mystery">
+            <p class="mystery-text">故事还在继续...</p>
+        </div>
+    </section>
+
+    <!-- 金句墙 -->
+    <section class="quotes" id="quotes">
+        <h2 class="section-title">
+            <span class="bracket">[</span>
+            金句墙
+            <span class="bracket">]</span>
+        </h2>
+        <div class="quotes-grid">
+            <div class="quote-card">
+                <p>代码改不改世界我不知道，但先让我准时下班。</p>
+            </div>
+            <div class="quote-card">
+                <p>需求改不改产品我不知道，但先让我准时下班。</p>
+            </div>
+            <div class="quote-card">
+                <p>BUG修不修得完我不知道，但先让我准时下班。</p>
+            </div>
+            <div class="quote-card">
+                <p>AI会不会取代我我不知道，但先让我准时下班。</p>
+            </div>
+            <div class="quote-card">
+                <p>周末不写代码，是打工人最后的底线。</p>
+            </div>
+            <div class="quote-card">
+                <p>差不多得了。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内容矩阵 -->
+    <section class="content" id="content">
+        <h2 class="section-title">
+            <span class="bracket">[</span>
+            内容矩阵
+            <span class="bracket">]</span>
+        </h2>
+        <div class="content-grid">
+            <div class="content-card">
+                <div class="card-icon">🤖</div>
+                <h3>AI Agent 学习</h3>
+                <p>从零开始的AI智能体学习之旅</p>
+                <span class="card-status">更新中</span>
+            </div>
+            <div class="content-card">
+                <div class="card-icon">☕</div>
+                <h3>Java 技术分享</h3>
+                <p>后端开发实战经验与思考</p>
+                <span class="card-status">更新中</span>
+            </div>
+            <div class="content-card">
+                <div class="card-icon">📝</div>
+                <h3>职场成长纪实</h3>
+                <p>普通程序员的真实职场故事</p>
+                <span class="card-status">更新中</span>
+            </div>
+            <div class="content-card">
+                <div class="card-icon">🐱</div>
+                <h3>猫猫宇宙</h3>
+                <p>Grid City 的赛博朋克世界观</p>
+                <span class="card-status">筹备中</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 一人公司/工作室 -->
+    <section class="studio" id="studio">
+        <h2 class="section-title">
+            <span class="bracket">[</span>
+            一人公司
+            <span class="bracket">]</span>
+        </h2>
+        <div class="studio-content">
+            <div class="studio-visual">
+                <img src="img/character.png" alt="宸一全身像" class="studio-image">
+            </div>
+            <div class="studio-info">
+                <div class="studio-concept">
+                    <h3>什么是「一人公司」？</h3>
+                    <p>一个人 = 一家公司</p>
+                    <p>自己是CEO，也是员工</p>
+                    <p>自己是产品经理，也是运营</p>
+                    <p>自己是创作者，也是分发渠道</p>
+                </div>
+                <div class="studio-mission">
+                    <h3>宸一工作室的使命</h3>
+                    <ul>
+                        <li><span class="mission-icon">🎯</span> 用AI工具提升个人生产力</li>
+                        <li><span class="mission-icon">📝</span> 持续输出高质量内容</li>
+                        <li><span class="mission-icon">🔄</span> 打造内容生产闭环</li>
+                        <li><span class="mission-icon">📈</span> 实现个人品牌增长</li>
+                    </ul>
+                </div>
+                <div class="studio-quote">
+                    <blockquote>
+                        "不是等准备好了才开始，<br>
+                        而是开始了才能准备好。"
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="cy-text">CY</span>
+                <span class="dot">·</span>
+                <span class="studio-text">Studio</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://gitee.com/chen-yi-Liu" target="_blank">Gitee</a>
+                <a href="https://blog.csdn.net/qq_44093986" target="_blank">CSDN</a>
+                <a href="https://www.zhihu.com/people/shen-jie-jiu-tu-6" target="_blank">知乎</a>
+                <a href="https://juejin.cn/user/3090049832068983" target="_blank">掘金</a>
+                <a href="javascript:void(0)" class="wechat-link" onclick="showWechatModal()">公众号</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2024 宸一工作室 | 真实记录，长期主义</p>
+                <p class="icp">一人公司 · 独立创作者</p>
+            </div>
+        </div>
+
+        <!-- 微信公众号弹窗 -->
+        <div id="wechat-modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeWechatModal()">&times;</span>
+                <h3>关注公众号</h3>
+                <img src="img/wechat-qr.jpg" alt="微信公众号二维码" class="qr-image">
+                <p>扫码关注，获取更多内容</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 弹窗控制脚本 -->
+    <script>
+        // 显示弹窗
+        function showWechatModal() {
+            document.getElementById('wechat-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // 关闭弹窗
+        function closeWechatModal() {
+            document.getElementById('wechat-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        // 点击弹窗外部关闭
+        window.onclick = function(event) {
+            var modal = document.getElementById('wechat-modal');
+            if (event.target == modal) {
+                closeWechatModal();
+            }
+        }
+        
+        // ESC键关闭弹窗
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeWechatModal();
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
